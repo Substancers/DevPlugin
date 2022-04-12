@@ -18,6 +18,7 @@ def readAttribs():
         sdParmUi = parmUI.GetNodeParms()
     if sdParmUi.isVisible():
         sdParmUi.close()
+    sdParmUi.ClearAllTextEdit()
     sdParmUi.show()
 
 

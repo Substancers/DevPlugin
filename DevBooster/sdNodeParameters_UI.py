@@ -39,6 +39,10 @@ class GetNodeParms(QDialog):
             toPrint = '\n'.join(catAttr)
             te.setText(toPrint)
 
+    def ClearAllTextEdit(self):
+        for te in self.teTuple:
+            te.clear()
+
 
 class Ui_Parms(object):
     def setupUi(self, Parms):
