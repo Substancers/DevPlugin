@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CurveSystem</class>
+ <widget class="QDialog" name="CurveSystem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>916</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>410</width>
+    <height>916</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>410</width>
+    <height>916</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Curve System</string>
+  </property>
+  <layout class="QVBoxLayout" name="lo_main">
+   <item>
+    <widget class="QLabel" name="__lb_create">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Create</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo00">
+     <item>
+      <widget class="QToolButton" name="bt_c_00">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>8 Dots</string>
+       </property>
+       <property name="text">
+        <string>8 Dots</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_00.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonIconOnly</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_01">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Start Point</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_01.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_02">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Body</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_02.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_03">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Circle</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_03.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_04">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Spiral</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_04.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_05">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Polygon</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_05.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo01">
+     <item>
+      <widget class="QToolButton" name="bt_c_06">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Poly Spiral</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_06.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_07">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Connect</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_07.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_08">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Close</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_08.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_09">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Outline</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_09.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_10">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Detatch from Surface</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_10.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_c_11">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Import</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/c_11.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="__line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="__lb_edit">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo02">
+     <item>
+      <widget class="QToolButton" name="bt_e_01">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Assign Attribute</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_00.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_02">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Assign Attrib Simple</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_01.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_03">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Invert U</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_02.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_04">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Carve</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_03.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_05">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Blend Shape</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_04.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_06">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Smooth</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_05.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo03">
+     <item>
+      <widget class="QToolButton" name="bt_e_07">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Transform</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_06.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_08">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Directional Warp</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_07.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_09">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Centroid</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_08.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_10">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Shift U</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_09.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_11">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Switch</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_10.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_12">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Fit</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_11.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo04">
+     <item>
+      <widget class="QToolButton" name="bt_e_13">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Repeat</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_12.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_14">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Vector Warp</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_13.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_e_15">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Spiit</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/e_14.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="__sp_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="__line_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="__lb_render">
+     <property name="text">
+      <string>Render</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo05">
+     <item>
+      <widget class="QToolButton" name="bt_r_01">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Render Gray</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_00.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_r_02">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Render Color</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_01.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_r_03">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Flow</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_02.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_r_04">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Preview</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_03.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_r_05">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Single Gray</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_04.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_r_06">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Single Color</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_05.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo06">
+     <item>
+      <widget class="QToolButton" name="bt_r_07">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Area UV</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_06.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_r_08">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Ladder 1</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_r_09">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Ladder 2</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/r_07.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="__sp_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="__line_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="__lb_surface">
+     <property name="text">
+      <string>Surface</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo07">
+     <item>
+      <widget class="QToolButton" name="bt_s_00">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Stack Curve</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/s_00.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_s_01">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Stack Curve 8</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/s_01.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_s_02">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Sample Surface Gray</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/s_02.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_s_03">
+       <property name="maximumSize">
+        <size>
+         <width>16777213</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Sample Surface Color</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/s_03.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="__sp_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="__line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="__lb_utils">
+     <property name="text">
+      <string>Utils and Analysis</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo08">
+     <item>
+      <widget class="QToolButton" name="bt_u_00">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Pivot Gray</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/u_00.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_u_01">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Pivot Color</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/u_01.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_u_02">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Merge Pivot Gray</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/u_02.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_u_03">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Merge Pivot Color</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/u_03.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_a_00">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Get Length</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/a_00.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_a_01">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Gen Density</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/a_01.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="__line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="__lb_poly">
+     <property name="text">
+      <string>Polynomial</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo09">
+     <item>
+      <widget class="QToolButton" name="bt_p_00">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Polynomial Stater</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_00.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_p_01">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>f(ax-b)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_01.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_p_02">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Blend f(x) g(x)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_02.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_p_03">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Trigonomial</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_03.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_p_04">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Power</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_04.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_p_05">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Exponential</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_05.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="__lo10">
+     <item>
+      <widget class="QToolButton" name="bt_p_06">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Absolute</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_06.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_p_07">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Mod</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_07.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="bt_p_08">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Constant</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/icon/icon/p_08.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="__sp">
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="uiresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

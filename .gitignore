@@ -1,0 +1,5 @@
+﻿.idea
+__pycache__
+*.rar
+whitePaper.py
+*.autosave
